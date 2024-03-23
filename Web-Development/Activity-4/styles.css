@@ -1,0 +1,26 @@
+body{
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+a{
+    color: #007bff;
+    text-decoration: none;
+}
+.styled-box{
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.styled-box h2{
+    color: #333;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.styled-box p{
+    font-size: 14px;
+}

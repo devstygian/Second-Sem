@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity 3A: The If Statement</title>
+    </head>
+    <body>
+        <h1>Are You Eligible To Vote?</h1>
+        <p>Enter your Age : <input type="number" id="userAge" value=""></p>
+        <button onclick="enter()">Enter</button>
+
+        <p id="show">The Result is :</p>
+
+        <script>
+            function enter(){
+                const Age = document.getElementById('userAge').value;
+                let result;
+                if (Age >= 18) {
+                    result = "You can Vote";
+                } else {
+                    result = "You are NOT Eligible to Vote";
+                }
+                document.getElementById("show").innerHTML = "The Result is : "+ result;
+            }
+        </script>
+    </body>
+</html>

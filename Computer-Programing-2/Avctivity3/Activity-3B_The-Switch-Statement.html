@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity3B: The Switch Statement</title>
+    </head>
+    <body>
+        <h1>Weekday Or Weekend?</h1>
+        <p>Enter The Day : <input type="text" id="day" value="" ></p>
+        <button onclick="enterDay()">Enter</button>
+
+        <p id="show">The Result Will Show Here!</p>
+
+        <script>
+            function enterDay() {
+                const inputDay = document.getElementById('day').value;
+                let theResult;
+                switch(inputDay){
+                    //For Big letters Function
+                    case 'Monday':
+                    case 'Tuesday':
+                    case 'Wednesday':
+                    case 'Thursday':
+                    case 'Friday':
+                        theResult = "Weekday";
+                        break;
+                    case 'Saturday':
+                    case 'Sunday':
+                        theResult = "Weekend";
+                        break;
+
+                    //For Small letters Function
+                    case 'monday':
+                    case 'tuesday':
+                    case 'wednesday':
+                    case 'thursday':
+                    case 'friday':
+                        theResult = "Weekday";
+                        break;
+                    case 'saturday':
+                    case 'sunday':
+                        theResult = "Weekend";
+                        break;
+                    default:
+                        theResult = "Oops!! SOMETHING IS WRONG!.....Please Check The Spelling!";
+                        break;
+                }
+            document.getElementById("show").innerHTML = "Result : " + theResult;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity 2 - Problem 2</title>
+    </head>
+    <body>
+
+        <h1>Even or Odd</h1>
+        <p>Guidelines: Click the ENTER button to see the result. If the result is <i><strong>False</strong></i>
+            that means <strong>ODD</strong> and when its <i><strong>True</strong></i> that means <strong>EVEN</strong> </p>
+
+        <p>Enter Number : <input type="number" id="userInput" value=""></p>
+
+        <button onclick=" isEven()">Enter</button>
+
+        <script type="text/javascript">
+
+            function  isEven(){
+
+                var num = document.getElementById("userInput").value;
+            
+                result = num % 2  ==0;
+                
+                document.write(result)
+            
+            }
+
+        </script>
+    </body>
+</html>

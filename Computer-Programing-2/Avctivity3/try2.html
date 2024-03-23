@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<body>
+    <h1>Day Of The Week</h1>
+    <p>Enter Day : <input type="number" id="day" value=""></p>
+    <button onclick="enter()">Enter</button>
+
+    <p id="show">The Result is :</p>
+
+    <script type="text/javascript">
+        function enter() {
+            let Age = document.getElementById('day').value;
+            
+            
+                let day;
+                switch (Age) {
+                   case 0:
+                    day = "Sunday";
+                    break;
+                    case 1:
+                    day = "Monday";
+                    break;
+                    case 2:
+                    day = "Tuesday";
+                    break;
+                    case 3:
+                    day = "Wednesday";
+                    break;
+                    case 4:
+                    day = "Thursday";
+                    break;
+                    case 5:
+                    day = "Friday";
+                    break;
+                    case 6:
+                    day = "Saturday";
+                    }
+                document.getElementById("show").innerHTML = "Today is " + day;
+           
+        }
+    </script>
+</body>
+
+</html>
+ 
+  

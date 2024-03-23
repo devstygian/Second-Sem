@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Area Calculator</title>
+</head>
+
+<body>
+
+    <label for="length">length :</label>
+    <input type="number" id="length">
+
+    <label for="width">width :</label>
+    <input type="number" id="width">
+
+    <button onclick="calculateRectangleArea()">Calculate Area</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateRectangleArea() {
+            // Get user input for length and width
+            var length = parseFloat(document.getElementById('length').value);
+            var width = parseFloat(document.getElementById('width').value);
+
+            // Guard clause: Exit early if either input is not a valid number
+            if (isNaN(length) || isNaN(width)) {
+                document.getElementById('result').textContent = 'Please enter valid numbers for length and width.';
+                return;
+            }
+
+            // Calculate the area
+            var area = length * width;
+
+            // Display the result on the webpage
+            document.getElementById('result').textContent = 'Area of the rectangle: ' + area;
+        }
+    </script>
+
+</body>
+
+</html>

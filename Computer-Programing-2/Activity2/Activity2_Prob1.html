@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity 2 - Problem 1</title>
+    </head>
+    <body>
+        <h1>Rectangle Calculator</h1>
+        
+        <p>length : <input type="number" id="length" value=""></p>
+        <p>width : <input type="number" id="width" value=""></p>
+        
+        <button onclick="calculateRectangleArea()">Calculate Area</button>
+        
+        <p id="result"></p>
+        
+        <script type="text/javascript">
+            function calculateRectangleArea() {
+            
+                var length = document.getElementById('length').value;
+                var width = document.getElementById('width').value;
+
+                var area = length * width;
+
+                alert("Area of rectangle : " + area );
+            }
+        </script>
+        
+        </body>
+    </html>
