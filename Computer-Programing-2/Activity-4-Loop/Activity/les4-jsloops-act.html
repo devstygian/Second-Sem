@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Scores</title>
+</head>
+
+<body>
+    <h1>Student Scores</h1>
+    <div id="output"></div>
+
+    <script>
+        function calculateAverage(scores) {
+            let totalScore = 0;
+            let subjectCount = 0;
+
+            for (let score of Object.values(scores)) {
+                totalScore += score;
+                subjectCount++;
+            }
+
+            const averageScore = totalScore / subjectCount;
+            return averageScore;
+        }
+
+        const students = [
+            { name: "Alice", scores: { math: 90, science: 85, history: 88 } },
+            { name: "Bob", scores: { math: 80, science: 75, history: 78 } },
+            { name: "Charlie", scores: { math: 95, science: 92, history: 90 } }
+        ];
+
+        const outputDiv = document.getElementById("output");
+
+        for (let student of students) {
+            const averageScore = calculateAverage(student.scores);
+            const roundedAverage = Math.round(averageScore);
+            outputDiv.innerHTML += `<p>${student.name} - ${roundedAverage}</p>`;
+        }
+    </script>
+</body>
+
+</html>
