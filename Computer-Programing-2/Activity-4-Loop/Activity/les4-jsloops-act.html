@@ -36,7 +36,8 @@
         for (let student of students) {
             const averageScore = calculateAverage(student.scores);
             const roundedAverage = Math.round(averageScore);
-            outputDiv.innerHTML += `<p>${student.name} - ${roundedAverage}</p>`;
+           outputDiv.innerHTML += "<p>" + student.name + " - " + roundedAverage + "</p>";
+
         }
     </script>
 </body>
