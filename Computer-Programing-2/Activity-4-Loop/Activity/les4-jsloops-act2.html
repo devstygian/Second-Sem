@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Scores</title>
+    <title>Lesson4-Activity2</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             let subjectCount = 0;
 
             for (let score of Object.values(scores)) {
-                totalScore += score;
+                totalScore = totalScore + score;
                 subjectCount++;
             }
 
@@ -41,12 +41,12 @@
             { name: "Charlie", scores: { math: 78, science: 87, history: 80 } }
         ];
 
-        const outputDiv = document.getElementById("output");
+        const showOutput = document.getElementById("output");
 
         for (let student of students) {
             const { averageScore, grade } = calculateAverage(student.scores);
             const roundedAverage = Math.round(averageScore);
-           outputDiv.innerHTML += "<p>" + student.name + " - " + roundedAverage +" (" +grade +")" +"</p>";
+           showOutput.innerHTML =  showOutput.innerHTML + "<p>" + student.name + " - " + roundedAverage +" (" + grade +")" +"</p>";
         }
         </script>
     
