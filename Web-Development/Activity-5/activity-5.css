@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(243, 214, 150);
+}
+.Activity {
+    text-align: center;
+    font-family: forte;
+    font-size: 25px;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(241, 187, 124);
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+.title{
+    font-size: 30px;
+}
+.Animals {
+    font-size: 25px;
+    color: rgb(218, 77, 22);
+}
+table,th,td {
+    border: 1px solid white;
+    padding: 8px;
+}
+th {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.container img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-left: 5%;
+
+}
